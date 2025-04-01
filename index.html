@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #032ff6;
+      text-align: center;
+      padding: 4px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #032ff6;
+      color: white;
+    }
+    </style>
+<body>
+    <!-- Add an ordered list with roman numerals -->
+    <h2>This is a list of my hobbies</h2>
+    <ol type="i">
+      <li>Watching youtube video</li>
+      <li>Playing video game</li>
+      <li>Reading</li>
+      <li>Taking a stroll</li>
+      <li>Coding</li>
+    </ol>
+
+    <!-- Add an external image from pexels.com -->
+    <h2>This is a picture of puppies</h2>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600" alt="puppies" width="300" height="300">
+    
+    <!-- Add a table of 5 contacts with; name, address, mobile and emails -->
+    <h2>This is a table of 5 contacts</h2>
+    <table>
+        <tr>
+          <td>Name</td>
+          <td>Address</td>
+          <td>Mobile</td>
+          <td>Emails</td>
+        </tr>
+        <tr>
+            <td>Lionel Messi</td>
+            <td>Argentina, South America</td>
+            <td>+54 9 11 1234 5678</td>
+            <td>messi.lionel@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Paul Pogba</td>
+            <td>France, Europe</td>
+            <td>+33 1 23 45 67 89</td>
+            <td>paul.pogba@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Bruno Fernandes</td>
+            <td>Portugal, Europe</td>
+            <td>+33 1 33 45 22 89</td>
+            <td>messi.lionel@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Paul Scholes</td>
+            <td>England, Europe</td>
+            <td>+44 1 23 45 67 66</td>
+            <td>paul.scholes@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Cristiano Ronaldo</td>
+            <td>Portugal, Europe</td>
+            <td>+33 2 33 45 22 12</td>
+            <td>cristiano.ronaldo@gmail.com</td>
+          </tr>
+      </table>
+      <!-- Add a registration form -->
+      <h2>This is a registration form</h2>
+      <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <fieldset>
+        <!-- Name Field -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required> <br>
+        
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
+        
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"> <br>
+        
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label> <br>
+        <input type="date" id="dob" name="dob" required> <br>
+        
+        <!-- Dropdown Field -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br>
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </fieldset>
+    </form>
+</body>
+</html>
